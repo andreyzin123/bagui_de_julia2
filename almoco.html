@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almoço</title>
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        .titulo-img {
+            display: block;
+            margin: 40px auto 20px auto;
+            max-width: 400px;
+            height: 100px;
+        }
+
+        .comidas {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            padding: 50px;
+            flex-wrap: wrap;
+        }
+
+        .comida-card {
+            background-color: royalblue; /* Azul para categoria almoço */
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .comida-card:hover {
+            transform: scale(1.05);
+        }
+
+        .comida-card img {
+            width: 100%;
+            border-radius: 12px;
+        }
+
+        .comida-card span {
+            display: block;
+            margin-top: 12px;
+            font-size: 1.2em;
+            color: white;
+            font-weight: bold;
+        }
+
+        .voltar {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #ccc;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 0.9em;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            z-index: 1000;
+        }
+
+        .voltar:hover {
+            background-color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <!-- Botão Voltar -->
+    <a href="index.html" class="voltar">Voltar</a>
+
+    <!-- Imagem título -->
+    <img src="almoco.jpg" alt="Almoço" class="titulo-img">
+
+    <!-- Comidas de almoço -->
+    <div class="comidas">
+        <a href="arroz-e-feijao.html" class="comida-card">
+            <img src="arroz-e-feijao.jpg" alt="Arroz com Feijão">
+            <span>Arroz com Feijão</span>
+        </a>
+        <a href="estrogonofe.html" class="comida-card">
+            <img src="estrogonofe.jpg" alt="Estrogonofe">
+            <span>Strogonoff</span>
+        </a>
+    </div>
+</body>
+</html>

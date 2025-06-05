@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinesa</title>
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        .titulo-img {
+            display: block;
+            margin: 40px auto 20px auto;
+            max-width: 400px;
+            height: 100px;
+        }
+
+        .comidas {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            padding: 50px;
+            flex-wrap: wrap;
+        }
+
+        .comida-card {
+            background-color: seagreen; /* Verde */
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .comida-card:hover {
+            transform: scale(1.05);
+        }
+
+        .comida-card img {
+            width: 100%;
+            border-radius: 12px;
+        }
+
+        .comida-card span {
+            display: block;
+            margin-top: 12px;
+            font-size: 1.2em;
+            color: white;
+            font-weight: bold;
+        }
+
+        .voltar {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #ccc;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 0.9em;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            z-index: 1000;
+        }
+
+        .voltar:hover {
+            background-color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <!-- Botão Voltar -->
+    <a href="index.html" class="voltar">Voltar</a>
+
+    <!-- Imagem título -->
+    <img src="chinesa.jpg" alt="Chinesa" class="titulo-img">
+
+    <!-- Comidas chinesas -->
+    <div class="comidas">
+        <a href="yakisoba.html" class="comida-card">
+            <img src="yakisoba.jpg" alt="Yakisoba">
+            <span>Yakisoba</span>
+        </a>
+        <a href="rolinho-primavera.html" class="comida-card">
+            <img src="rolinho-primavera.jpg" alt="Rolinho Primavera">
+            <span>Rolinho Primavera</span>
+        </a>
+    </div>
+</body>
+</html>
